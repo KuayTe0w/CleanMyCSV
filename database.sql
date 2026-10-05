@@ -1,0 +1,11 @@
+CREATE DATABASE cleanmycsv;
+USE cleanmycsv;
+
+CREATE TABLE datasets (
+  id INT NOT NULL AUTO_INCREMENT,
+  session_id VARCHAR(100),
+  raw_data LONGTEXT,
+  actions LONGTEXT,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY(id)
+);
